@@ -9,7 +9,7 @@ const ContextProvider = (props) => {
   const [Showresult, SetShowresult] = useState(false);
   const [loading, setLoading] = useState(false);
   const [resultData, SetResultData] = useState("");
-  const [Extended, setExtended] = useState(true);
+  const [Extended, setExtended] = useState(false);
   const delayPara = (index, nextword) => {
     setTimeout(function () {
       SetResultData((prev) => prev + nextword);

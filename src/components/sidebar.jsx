@@ -85,9 +85,15 @@ function SideBar() {
 
       <div className="">
         {Extended ? (
-          <div className="gap-3 flex hover:bg-[#e2e6eb] p-3 rounded-2xl">
-            <img className="w-[20px]" src={assets.setting_icon} alt="" />
-            <p>Settings and help</p>
+          <div className="gap-3 flex hover:bg-[#e2e6eb] p-3 rounded-2xl items-center">
+            <img
+              className="w-[15px] h-[15px] sm:w-[20px] sm:h-[20px]"
+              src={assets.setting_icon}
+              alt=""
+            />
+            <p>
+              Settings <span className="hidden sm:block">and help</span>
+            </p>
           </div>
         ) : null}
       </div>
